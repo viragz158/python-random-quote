@@ -4,8 +4,8 @@ def test():
   f = open("quotes.txt")
   quotes = f.readlines()
   f.close()
-
-  print(quotes[len(quotes)-1])
+  for q in quotes:
+    print(q.rstrip("\n"))
 
 if __name__== "__main__":
   test()
